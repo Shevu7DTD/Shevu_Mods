@@ -4,7 +4,7 @@ Installation der Modsammlung wie folgt:
 
     Schritt: im oberen Fenster bitte auf den Button "Install Game Copy" benutzen 
              Info: der Modlauncher installiert auf der Festplatte nunmehr eine Kopie der Vanilla Version, 
-                nach der Installation bitte Schritt 2 ausführen.
+             nach der Installation bitte Schritt 2 ausführen.
 
     Schritt: Den Button "Pre-Sync Mod" benutzen. 
              Info: Der Modlauncher läde die Mods herunter und installiert diese.

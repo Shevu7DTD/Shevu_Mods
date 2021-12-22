@@ -1,0 +1,57 @@
+<configs>
+	<append xpath="/items">
+		
+		<item name="vehicleChaosBikeBaseChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="ChaosBike_Chassis"/>
+			<property name="DescriptionKey" value="vehicleChaosBikeBaseChassis"/>
+			<property name="EconomicValue" value="10000"/>
+		</item>
+		
+		<item name="vehicleChaosBikeCompleteChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="ChaosChassisAssembly"/>
+			<property name="DescriptionKey" value="vehicleChaosBikeCompleteChassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleChaosBikebars">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="ChaosBike_Handlebars"/>
+			<property name="DescriptionKey" value="vehicleChaosBikebarsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleChaosBikeSeat">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="ChaosBike_Seat"/>
+			<property name="DescriptionKey" value="vehicleChaosBikeSeatDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleChaosBikeEngine">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Chaos_Engine"/>
+			<property name="DescriptionKey" value="vehicleChaosBikeEngineDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleChaosBikeplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+			<property name="CustomIcon" value="ChaosBike"/>
+			<property name="DescriptionKey" value="vehicleChaosBikeplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ChaosBike.unity3d?vehicle_chaos_bike_A20.prefab"/>
+			<property name="EconomicValue" value="21000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleChaosBike"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
+			</effect_group>
+		</item>
+</append>
+</configs>

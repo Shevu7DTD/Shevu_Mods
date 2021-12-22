@@ -1,0 +1,16 @@
+<configs>
+
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
+
+		<lootgroup name="Chaosgroup">
+			<item name="vehicleChaosBikeBaseChassis"/>
+			<item name="vehicleChaosBikebars"/>
+			<item name="vehicleChaosBikeSeat"/>
+		</lootgroup>
+	
+	</insertBefore>
+
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="Chaosgroup" loot_prob_template="ProbT2"/>
+	</append>
+</configs>
